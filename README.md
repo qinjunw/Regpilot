@@ -8,6 +8,10 @@
 
 请先阅读 [作品集公开版说明](docs/PORTFOLIO_EDITION.md)，其中列出了代码可验证能力、配套演示材料边界、最短验证路径、数据与隐私边界以及使用限制。
 
+![Regpilot Agent 受控填报运行结果（脱敏）](docs/assets/agent-controlled-formfill-redacted.png)
+
+> 上图来自完整本地集成原型，已对真实数据和环境信息脱敏。公开仓库提供可运行的法规工作台与确定性模拟填报链路，不包含图中连接生产页面的受控浏览器适配器。
+
 ## 当前稳定边界
 
 - 摄取用户明确提供的 `md/txt/html/htm/json/jsonl/csv/docx/xlsx` 以及可提取文本的 PDF。
