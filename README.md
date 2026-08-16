@@ -36,6 +36,15 @@ regpilot-launcher
 
 默认在本机浏览器打开工作台。未配置模型时仍可验证工作台、会话、Skills 清单和模拟填报；通过自然语言执行法规资料检索、台账整理和证据约束分析需要自行配置模型 API。底层证据与台账能力可在不访问外部 API 的测试中验证。
 
+## 演示视频
+
+以下视频展示完整本地原型运行效果，涉及真实环境的信息已经脱敏。
+
+
+https://github.com/user-attachments/assets/b0a62114-227b-471d-b05a-936faac663fc
+
+
+
 ## 文档
 
 - [作品集公开版说明](docs/PORTFOLIO_EDITION.md)
