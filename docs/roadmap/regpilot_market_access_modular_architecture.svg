@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">RegPilot 市场准入风险前置模块化架构</title>
+  <desc id="desc">六个能力模块围绕合规知识库和对象台账读写、复核、匹配、消费和同步对象。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#467099" />
+    </marker>
+    <style>
+      .canvas { fill: #f6f8fb; }
+      .title { font: 700 28px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #172033; }
+      .subtitle { font: 400 16px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #596579; }
+      .card { fill: #ffffff; stroke-width: 2; rx: 12; }
+      .hub { fill: #ffffff; stroke: #1f6feb; stroke-width: 2.5; rx: 16; }
+      .card-title { font: 700 18px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #172033; }
+      .card-text { font: 400 15px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #334155; }
+      .hub-title { font: 700 22px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #0f3b66; }
+      .object-pill { fill: #eef6ff; stroke: #b7d4f2; stroke-width: 1; rx: 10; }
+      .object-text { font: 600 14px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #153b5f; }
+      .connector { fill: none; stroke: #467099; stroke-width: 2; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .connector-in { fill: none; stroke: #467099; stroke-width: 2; marker-end: url(#arrow); }
+      .connector-dashed { fill: none; stroke: #6b7788; stroke-width: 2; stroke-dasharray: 8 7; marker-start: url(#arrow); marker-end: url(#arrow); }
+      .agent-badge { fill: #123c69; rx: 10; }
+      .agent-text { font: 700 12px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .agent-legend { font: 600 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #294763; }
+      .note { font: 400 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect class="canvas" x="0" y="0" width="1280" height="720" />
+  <text class="title" x="64" y="54">RegPilot 市场准入风险前置：模块化架构</text>
+  <text class="subtitle" x="64" y="84">主链路不是瀑布；各模块围绕可追溯对象台账读写、复核、匹配和反馈。</text>
+
+  <line class="connector-in" x1="390" y1="180" x2="420" y2="320" />
+  <line class="connector" x1="640" y1="240" x2="640" y2="280" />
+  <line class="connector" x1="890" y1="180" x2="850" y2="320" />
+  <line class="connector" x1="390" y1="555" x2="430" y2="390" />
+  <line class="connector" x1="890" y1="555" x2="850" y2="390" />
+  <line class="connector-dashed" x1="640" y1="520" x2="640" y2="450" />
+
+  <rect class="card" x="70" y="120" width="320" height="130" stroke="#2f855a" />
+  <rect class="agent-badge" x="338" y="134" width="36" height="22" />
+  <text class="agent-text" x="348" y="150">A1</text>
+  <text class="card-title" x="96" y="159">法规来源采集与跟踪</text>
+  <text class="card-text" x="96" y="191">站点适配 / 官方 API / 文件导入</text>
+  <text class="card-text" x="96" y="219">采集诊断、来源版本、原始证据</text>
+
+  <rect class="card" x="480" y="110" width="320" height="130" stroke="#6f5cc2" />
+  <rect class="agent-badge" x="748" y="124" width="36" height="22" />
+  <text class="agent-text" x="758" y="140">A2</text>
+  <text class="card-title" x="506" y="149">法规解读与候选要求</text>
+  <text class="card-text" x="506" y="181">Agent 辅助抽取、摘要、问答</text>
+  <text class="card-text" x="506" y="209">输出候选要求，不直接入正式库</text>
+
+  <rect class="card" x="890" y="120" width="320" height="130" stroke="#b7791f" />
+  <text class="card-title" x="916" y="159">法规专家复核工作区</text>
+  <text class="card-text" x="916" y="191">法规部门 / 专家确认</text>
+  <text class="card-text" x="916" y="219">候选要求 -&gt; 正式要求</text>
+
+  <rect class="hub" x="420" y="280" width="440" height="170" />
+  <rect class="agent-badge" x="796" y="296" width="36" height="22" />
+  <text class="agent-text" x="806" y="312">A4</text>
+  <text class="hub-title" x="470" y="320">RegPilot合规知识库 / 对象台账</text>
+  <rect class="object-pill" x="465" y="344" width="150" height="32" />
+  <text class="object-text" x="494" y="365">源证据</text>
+  <rect class="object-pill" x="625" y="344" width="190" height="32" />
+  <text class="object-text" x="658" y="365">正式法规要求单元</text>
+  <rect class="object-pill" x="465" y="386" width="150" height="32" />
+  <text class="object-text" x="487" y="407">产品合规画像</text>
+  <rect class="object-pill" x="625" y="386" width="190" height="32" />
+  <text class="object-text" x="659" y="407">风险信号 / 工程建议</text>
+
+  <rect class="card" x="70" y="490" width="320" height="130" stroke="#2b6cb0" />
+  <rect class="agent-badge" x="338" y="504" width="36" height="22" />
+  <text class="agent-text" x="348" y="520">A6</text>
+  <text class="card-title" x="96" y="529">RegPilot 工程师工作台</text>
+  <text class="card-text" x="96" y="561">风险查看、证据提交、问答说明</text>
+  <text class="card-text" x="96" y="589">指导设计变更</text>
+
+  <rect class="card" x="480" y="520" width="320" height="130" stroke="#6b7280" />
+  <text class="card-title" x="506" y="559">外部企业流程</text>
+  <text class="card-text" x="506" y="591">任务、PLM、变更、认证、验证</text>
+  <text class="card-text" x="506" y="619">可外发 / 可同步对象</text>
+
+  <rect class="card" x="890" y="490" width="320" height="130" stroke="#c2410c" />
+  <rect class="agent-badge" x="1158" y="504" width="36" height="22" />
+  <text class="agent-text" x="1168" y="520">A5</text>
+  <text class="card-title" x="916" y="529">风险匹配与状态服务</text>
+  <text class="card-text" x="916" y="561">要求-项目匹配、风险状态</text>
+  <text class="card-text" x="916" y="589">生成风险信号和工程建议</text>
+
+  <rect class="agent-badge" x="64" y="646" width="36" height="22" />
+  <text class="agent-text" x="74" y="662">A#</text>
+  <text class="agent-legend" x="112" y="662">表示可引入或计划引入的 Agent 能力点；仅辅助，不替代复核、状态机和工程批准。</text>
+  <text class="note" x="64" y="696">说明：虚线表示可外发/可同步的企业流程对象；RegPilot 内部仍保留源记录、风险关联和证据链。</text>
+</svg>

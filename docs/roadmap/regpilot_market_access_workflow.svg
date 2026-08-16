@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="860" viewBox="0 0 1600 860" role="img" aria-labelledby="title desc">
+  <title id="title">RegPilot 市场准入风险前置端到端工作流</title>
+  <desc id="desc">法规信息从多方来源进入，经过法规采集和状态跟踪、法规解读与入库、风险前置与工程指导三个大模块，最终形成工程指导。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#315f90" />
+    </marker>
+    <style>
+      .canvas { fill: #f6f8fb; }
+      .title { font: 700 30px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #162033; }
+      .subtitle { font: 400 16px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #526174; }
+      .module { fill: #ffffff; stroke: #74c500; stroke-width: 3; rx: 18; }
+      .module-title { font: 700 20px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #1f3c20; }
+      .module-subtitle { font: 400 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #617060; }
+      .stage { fill: #ffffff; stroke-width: 2; rx: 14; }
+      .stage-title { font: 700 18px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #162033; }
+      .stage-no { font: 700 13px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .stage-text { font: 400 14px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #344256; }
+      .stage-em { font: 700 14px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #1e3a5f; }
+      .badge { fill: #355f8c; rx: 12; }
+      .agent-badge { fill: #123c69; rx: 10; }
+      .agent-text { font: 700 12px "Segoe UI", Arial, sans-serif; fill: #ffffff; }
+      .flow { stroke: #315f90; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .flow-soft { stroke: #7d8aa0; stroke-width: 2; fill: none; stroke-dasharray: 8 8; marker-end: url(#arrow); }
+      .product { fill: #eef7e5; stroke: #74c500; stroke-width: 1.5; rx: 12; }
+      .product-title { font: 700 14px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #315d12; }
+      .product-text { font: 700 16px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #1e3a18; }
+      .product-line { stroke: #9ab984; stroke-width: 1.8; }
+      .loop-label { fill: #f8fafc; stroke: #c8d3e3; stroke-width: 1; rx: 10; }
+      .loop-text { font: 400 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #53667e; }
+      .boundary-trust { fill: #fff7ed; stroke: #f0b35a; stroke-width: 1.4; rx: 12; }
+      .boundary-work { fill: #edf5ff; stroke: #bad6f5; stroke-width: 1.4; rx: 12; }
+      .boundary-text { font: 700 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #244766; }
+      .trust-text { font: 700 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #8a4b12; }
+      .note { font: 400 13px "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", Arial, sans-serif; fill: #607086; }
+    </style>
+  </defs>
+
+  <rect class="canvas" x="0" y="0" width="1600" height="860" />
+  <text class="title" x="54" y="56">RegPilot 市场准入风险前置：端到端工作流</text>
+  <text class="subtitle" x="54" y="86">从法规信息获取开始，到风险预警和设计变更指导结束；这里展示信息对象如何在三个大模块中传递、处理和产出。</text>
+
+  <rect class="module" x="42" y="118" width="560" height="430" />
+  <text class="module-title" x="72" y="154">模块一：法规来源采集与跟踪</text>
+  <text class="module-subtitle" x="72" y="176">目标：拿到来源、形成证据、跟踪状态变化</text>
+
+  <rect class="module" x="606" y="118" width="560" height="430" />
+  <text class="module-title" x="636" y="154">模块二：法规解读与入库</text>
+  <text class="module-subtitle" x="636" y="176">目标：从证据抽取要求，经专家确认后入库</text>
+
+  <rect class="module" x="1176" y="118" width="384" height="430" />
+  <text class="module-title" x="1206" y="154">模块三：风险前置与工程指导</text>
+  <text class="module-subtitle" x="1206" y="176">目标：对标项目，前置提示风险并指导变更</text>
+
+  <rect class="stage" x="76" y="204" width="160" height="220" stroke="#2f855a" />
+  <rect class="badge" x="96" y="224" width="34" height="24" />
+  <text class="stage-no" x="105" y="241">01</text>
+  <text class="stage-title" x="96" y="276">多方来源</text>
+  <text class="stage-text" x="96" y="310">官方法规原文</text>
+  <text class="stage-text" x="96" y="338">微信公众号</text>
+  <text class="stage-text" x="96" y="366">公告 / 通报 / 意见</text>
+  <text class="stage-text" x="96" y="394">标准 / 附件</text>
+
+  <rect class="stage" x="248" y="204" width="160" height="220" stroke="#28718f" />
+  <rect class="badge" x="268" y="224" width="34" height="24" />
+  <text class="stage-no" x="277" y="241">02</text>
+  <text class="stage-title" x="268" y="276">采集与证据化</text>
+  <text class="stage-text" x="268" y="310">站点适配</text>
+  <text class="stage-text" x="268" y="338">网页 / 文件 / API</text>
+  <text class="stage-text" x="268" y="366">来源版本</text>
+  <text class="stage-text" x="268" y="394">证据包</text>
+
+  <rect class="stage" x="420" y="204" width="160" height="220" stroke="#2f855a" />
+  <rect class="badge" x="440" y="224" width="34" height="24" />
+  <text class="stage-no" x="449" y="241">03</text>
+  <rect class="agent-badge" x="528" y="224" width="36" height="24" />
+  <text class="agent-text" x="538" y="241">A1</text>
+  <text class="stage-title" x="440" y="276">法规状态跟踪</text>
+  <text class="stage-text" x="440" y="310">状态 / 版本</text>
+  <text class="stage-text" x="440" y="338">生效时间</text>
+  <text class="stage-text" x="440" y="366">变化提醒</text>
+  <text class="stage-text" x="440" y="394">待解读队列</text>
+
+  <rect class="stage" x="630" y="204" width="160" height="220" stroke="#6f5cc2" />
+  <rect class="badge" x="650" y="224" width="34" height="24" />
+  <text class="stage-no" x="659" y="241">04</text>
+  <rect class="agent-badge" x="738" y="224" width="36" height="24" />
+  <text class="agent-text" x="748" y="241">A2</text>
+  <text class="stage-title" x="650" y="276">Agent 初步解读</text>
+  <text class="stage-text" x="650" y="310">适用范围</text>
+  <text class="stage-text" x="650" y="338">触发条件</text>
+  <text class="stage-text" x="650" y="366">技术要求</text>
+  <text class="stage-text" x="650" y="394">候选要求</text>
+
+  <rect class="stage" x="802" y="204" width="160" height="220" stroke="#b7791f" />
+  <rect class="badge" x="822" y="224" width="34" height="24" />
+  <text class="stage-no" x="831" y="241">05</text>
+  <text class="stage-title" x="822" y="276">专家复核闸门</text>
+  <text class="stage-text" x="822" y="310">法规专家</text>
+  <text class="stage-text" x="822" y="338">接受 / 修订 / 驳回</text>
+  <text class="stage-text" x="822" y="366">补证 / 重做</text>
+  <text class="stage-text" x="822" y="394">复核记录</text>
+
+  <rect class="stage" x="974" y="204" width="160" height="220" stroke="#1f6feb" />
+  <rect class="badge" x="994" y="224" width="34" height="24" />
+  <text class="stage-no" x="1003" y="241">06</text>
+  <rect class="agent-badge" x="1082" y="224" width="36" height="24" />
+  <text class="agent-text" x="1092" y="241">A4</text>
+  <text class="stage-title" x="994" y="276">正式要求入库</text>
+  <text class="stage-text" x="994" y="310">要求单元</text>
+  <text class="stage-text" x="994" y="338">证据引用</text>
+  <text class="stage-text" x="994" y="366">检索索引</text>
+  <text class="stage-text" x="994" y="394">版本状态</text>
+
+  <rect class="stage" x="1200" y="204" width="160" height="220" stroke="#c2410c" />
+  <rect class="badge" x="1220" y="224" width="34" height="24" />
+  <text class="stage-no" x="1229" y="241">07</text>
+  <rect class="agent-badge" x="1308" y="224" width="36" height="24" />
+  <text class="agent-text" x="1318" y="241">A5</text>
+  <text class="stage-title" x="1220" y="276">项目匹配</text>
+  <text class="stage-title" x="1220" y="302">与风险前置</text>
+  <text class="stage-text" x="1220" y="338">产品合规画像</text>
+  <text class="stage-text" x="1220" y="366">市场 / 参数</text>
+  <text class="stage-text" x="1220" y="394">风险信号</text>
+
+  <rect class="stage" x="1380" y="204" width="160" height="220" stroke="#2b6cb0" />
+  <rect class="badge" x="1400" y="224" width="34" height="24" />
+  <text class="stage-no" x="1409" y="241">08</text>
+  <rect class="agent-badge" x="1488" y="224" width="36" height="24" />
+  <text class="agent-text" x="1498" y="241">A6</text>
+  <text class="stage-title" x="1400" y="276">工程指导</text>
+  <text class="stage-title" x="1400" y="302">与设计变更</text>
+  <text class="stage-text" x="1400" y="338">风险工作台</text>
+  <text class="stage-text" x="1400" y="366">问答解释</text>
+  <text class="stage-text" x="1400" y="394">变更同步</text>
+
+  <line class="flow" x1="236" y1="314" x2="248" y2="314" />
+  <line class="flow" x1="408" y1="314" x2="420" y2="314" />
+  <line class="flow" x1="580" y1="314" x2="630" y2="314" />
+  <line class="flow" x1="790" y1="314" x2="802" y2="314" />
+  <line class="flow" x1="962" y1="314" x2="974" y2="314" />
+  <line class="flow" x1="1134" y1="314" x2="1200" y2="314" />
+  <line class="flow" x1="1360" y1="314" x2="1380" y2="314" />
+
+  <rect class="product" x="72" y="462" width="500" height="54" />
+  <text class="product-title" x="96" y="484">模块产物</text>
+  <text class="product-text" x="204" y="494">法规状态跟踪表</text>
+
+  <rect class="product" x="636" y="462" width="500" height="54" />
+  <text class="product-title" x="660" y="484">模块产物</text>
+  <text class="product-text" x="790" y="494">法规解读</text>
+
+  <rect class="product" x="1206" y="462" width="326" height="54" />
+  <text class="product-title" x="1230" y="484">模块产物</text>
+  <text class="product-text" x="1330" y="494">产物：</text>
+  <line class="product-line" x1="1384" y1="492" x2="1490" y2="492" />
+
+  <path class="flow-soft" d="M 882 204 C 882 106 500 106 500 204" />
+  <rect class="loop-label" x="612" y="96" width="270" height="30" />
+  <text class="loop-text" x="632" y="116">补证 / 来源复查 / 重新解读</text>
+
+  <path class="flow-soft" d="M 1460 424 C 1460 596 1280 596 1280 424" />
+  <rect class="loop-label" x="1240" y="590" width="280" height="30" />
+  <text class="loop-text" x="1260" y="610">工程反馈 / 证据补充 / 画像更新</text>
+
+  <rect class="boundary-trust" x="54" y="666" width="690" height="54" />
+  <text class="trust-text" x="78" y="698">信任边界：非官方内容只作线索；Agent 输出为候选；正式要求需专家复核。</text>
+  <rect class="boundary-work" x="790" y="666" width="756" height="54" />
+  <text class="boundary-text" x="814" y="698">落地边界：工程建议可同步任务、PLM、变更流程；RegPilot 内部保留证据链。</text>
+
+  <rect class="agent-badge" x="54" y="742" width="36" height="24" />
+  <text class="agent-text" x="64" y="759">A#</text>
+  <text class="note" x="100" y="759">表示可引入或计划引入的 Agent 能力点；编号含义见文档中的 Agent 清单。</text>
+</svg>

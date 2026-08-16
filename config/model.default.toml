@@ -1,0 +1,11 @@
+provider = "deepseek"
+base_url = "https://api.deepseek.com"
+default_text_model = "deepseek-v4-pro"
+api_key = ""
+auth_mode = "api_key"
+reasoning_effort = "high"
+
+[providers.deepseek]
+base_url = "https://api.deepseek.com"
+model = "deepseek-v4-pro"
+api_key = ""

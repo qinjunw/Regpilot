@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "skill_type": "ai_workflow",
+  "status": "available",
+  "id": "regpilot.skill_creator",
+  "title": "RegPilot Skill Creator",
+  "category": "workflow",
+  "risk_level": "medium"
+}

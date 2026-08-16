@@ -1,0 +1,1 @@
+"""Prompt resources for RegPilot."""

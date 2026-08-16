@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regpilot-compliance-navigator"
+version = "0.1.0"
+description = "Local-first automotive regulation evidence and analysis workbench."
+requires-python = ">=3.11"
+dependencies = [
+  "openpyxl>=3.1",
+  "pypdf>=5.0",
+  "python-docx>=1.1",
+]
+
+[project.optional-dependencies]
+build = ["pyinstaller>=6.0"]
+
+[project.scripts]
+regulation-agent = "regulation_agent.server:run_server"
+regpilot-launcher = "regulation_agent.launcher:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+regulation_agent = ["prompts/*.md", "prompts/modes/*.md"]
