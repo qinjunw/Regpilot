@@ -1,10 +1,10 @@
 # Regpilot法规合规领航员
 
-一个本地优先的法规证据检索与分析工作台。它把本地法规资料、来源台账和大模型分析连接成可追溯的工作流，重点展示 AI 应用工程中的上下文构建、证据约束、流式交互与会话管理。
+一个本地优先的法规证据检索与分析工作台。把本地法规资料、来源台账和大模型分析连接成可追溯的工作流.用于各地相关法规认证准入
 
 ## 作品集公开版
 
-本仓库是可在 Windows 本地运行和验证的 **source-available portfolio**，用于个人作品展示；它不等于完整生产系统，也不是开源项目。公开源码覆盖法规工作台、证据处理、索引/台账、OpenAI-compatible 模型调用和确定性模拟填报；真实浏览器、生产填报工作簿、企业平台适配器与生产填报链路未公开。
+本仓库是可在 Windows 本地运行和验证的 **source-available portfolio**，用于个人作品展示；它不等于完整生产系统，也不是开源项目。
 
 请先阅读 [作品集公开版说明](docs/PORTFOLIO_EDITION.md)，其中列出了代码可验证能力、配套演示材料边界、最短验证路径、数据与隐私边界以及使用限制。
 
@@ -64,4 +64,4 @@ python -m unittest discover -s tests -p "test_*.py"
 
 ## 发布状态
 
-这是仅供作品评估的 source-available 源码展示仓库，不是开源软件，也不自动授予复制、再发布或商业使用许可。请阅读 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+这是仅供作品评估的源码展示仓库，不是开源软件，也不自动授予复制、再发布或商业使用许可。请阅读 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
